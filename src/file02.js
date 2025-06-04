@@ -17,12 +17,12 @@ const frameworks = [
 ];
 
 for (const framework of frameworks) {
-  const [frameworkName, releaseDate, usersNumber, popularityPercentage] = framework.split("|").map(item => item.trim());
+  const [frameworkName, releaseDate, usersName, popularityPercentage] = framework.split("|").map(item => item.trim());
 
   const frameworkObj = {
     frameworkName,
     releaseDate,
-    usersNumber,
+    usersName,
     popularityPercentage
   };
 
